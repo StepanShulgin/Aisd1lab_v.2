@@ -35,6 +35,8 @@ int main()
     MyList2.push_back(2);
     cout <<"First List: "<< MyList << endl <<"Second List: "<< MyList2 << endl;
     cout <<"Does the first list contain the second list: " << MyList.contains(MyList2) << endl;
+    MyList.remove(3);
+    cout << "First List: " << MyList << endl;
    
     _getch();
     return 0;
