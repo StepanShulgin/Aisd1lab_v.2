@@ -16,7 +16,7 @@ private:
 
     struct Element
     {
-        int x;
+        int member;
         Element* Next, * Previous;
      };
      Element* Head, * Tail;
@@ -32,7 +32,7 @@ public:
         Element* temp = new Element;
         temp->Previous = NULL;
         temp->Next = NULL;
-        temp->x = NULL;
+        temp->member = NULL;
         size_of_list = 0;
     }
 
@@ -82,7 +82,7 @@ public:
             if ((temp == NULL))
                 return false;
            
-            if (temp->x == secondList.at(i))
+            if (temp->member == secondList.at(i))
             {
                 
                 temporary = i;
@@ -96,7 +96,7 @@ public:
         while ((temp != Tail) && (temporary < secondList.get_size() - 1))
         {
             
-            if (temp->x == secondList.at(temporary))
+            if (temp->member == secondList.at(temporary))
             {
                 temp = temp->Next;
                 temporary++;
@@ -111,7 +111,7 @@ public:
         if ((temporary == secondList.get_size()) - 1)
         {
             
-            if (temp->x == secondList.at(temporary))
+            if (temp->member == secondList.at(temporary))
                 return true;
             else
                 return false;
@@ -148,11 +148,11 @@ public:
         }
     }
 
-    void push_front(int x)                            //Add a new element forward
+    void push_front(int newMember)                            //Add a new element forward
     { 
         Element* temp = new Element;
         temp->Next = NULL;
-        temp->x = x;
+        temp->member = newMember;
        
 
         if (Head != NULL)                             //If List is empty
@@ -171,11 +171,11 @@ public:
         }
     }
 
-    void push_back(int x)                           //Add a new element to the end
+    void push_back(int newMember)                           //Add a new element to the end
     {
             Element* temp = new Element;
             temp->Next = NULL;
-            temp->x = x;
+            temp->member = newMember;
 
             if (Head != NULL)                           //If List is not empty
             {
@@ -258,7 +258,7 @@ public:
             for (int i = 0; i < elem; i++) {
                 temp = temp->Next;
             }
-            return temp->x;
+            return temp->member;
         }
         else {
             throw out_of_range("Out of range");
@@ -267,7 +267,7 @@ public:
 
     }
 
-    void set(size_t elem, int X)                                        //Replacing an element by index with the transmitted element
+    void set(size_t elem, int newMember)                                        //Replacing an element by index with the transmitted element
     {
         if (elem > get_size() - 1) {         //Out of range
             throw out_of_range("Out of range");
@@ -276,7 +276,7 @@ public:
             Element* temp = Head;
             for (int i = 0; i < elem; i++)
                 temp = temp->Next;
-            temp->x = X;
+            temp->member = newMember;
            
         }
     }
@@ -307,7 +307,7 @@ public:
                      temp = temp->Next;
                  Element* newElement = new Element;
 
-                 newElement->x = value;
+                 newElement->member = value;
                  save = temp->Next;
                  temp->Next;
                  temp->Next = newElement;
@@ -335,7 +335,7 @@ ostream& operator << (ostream& stream, const List& list)
 {
     List::Element* write = list.Head;
     while (write != NULL) {
-        stream << write->x << " ";
+        stream << write->member << " ";
         write = write->Next;
     }
     return stream;
