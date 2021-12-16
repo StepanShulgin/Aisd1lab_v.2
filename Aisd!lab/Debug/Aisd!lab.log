@@ -1,0 +1,12 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (Aisd!lab.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  Source.cpp
+C:\Users\stepa\source\repos\Aisd!lab\Aisd!lab\List.h(77,27): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\stepa\source\repos\Aisd!lab\Aisd!lab\List.h(79,17): warning C4018: >: несоответствие типов со знаком и без знака
+C:\Users\stepa\source\repos\Aisd!lab\Aisd!lab\List.h(96,45): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\stepa\source\repos\Aisd!lab\Aisd!lab\List.h(107,42): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\stepa\source\repos\Aisd!lab\Aisd!lab\List.h(136,35): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\stepa\source\repos\Aisd!lab\Aisd!lab\List.h(258,31): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\stepa\source\repos\Aisd!lab\Aisd!lab\List.h(277,31): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\stepa\source\repos\Aisd!lab\Aisd!lab\List.h(306,36): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\stepa\source\repos\Aisd!lab\Aisd!lab\List.h(120): warning C4715: List::contains: значение возвращается не при всех путях выполнения
+  Aisd!lab.vcxproj -> C:\Users\stepa\source\repos\Aisd!lab\Debug\Aisd1lab.exe
